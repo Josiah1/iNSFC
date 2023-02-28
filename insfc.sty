@@ -9,8 +9,12 @@
 % -------------------------------------------------
 
 \setCJKfamilyfont{zhkai}[BoldFont={Kaiti SC Bold}]{Kaiti SC}
-\setCJKfamilyfont{zhsong}[BoldFont={Songti SC Bold}]{Songti SC} 
+%\setCJKfamilyfont{zhsong}[BoldFont={Songti SC Bold}]{Songti SC} 
 
+\setCJKfamilyfont{zhsong}[BoldFont={Songti SC Bold}]{SimSun} 
+%\setCJKfamilyfont{zhsong}[BoldFont={SimSunBold}]{SimSun} 
+
+\renewcommand*{\songti}{\CJKfamily{zhsong}}
 
 
 % Cite mark [1] on the top right
@@ -31,6 +35,7 @@
 \newcommand{\NsfcNote}[1]{\textcolor{NsfcBlue}{{\zihao{4}{{\kaishu #1}}}}}
 \newcommand{\alert}[1]{\textcolor{NsfcBlue}{{\zihao{4}{{\bfseries \kaishu #1}}}}}
 \newcommand{\qiangdiao}[1]{\textcolor{red}{#1}}
+
 
 % For the chapter name like （一）立项依据与研究内容（4000-8000字）
 \newcommand{\NsfcChapter}[2]{   
